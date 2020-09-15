@@ -7,8 +7,8 @@ public class InstantiateBubble : MonoBehaviour
 {
 
     public GameObject bubblePrefab;
-    private Ray ray; // The ray
-    private RaycastHit hit; // What we hit
+    public GameObject towerPrefab;
+
 
     void BubbleSpawn(){
         
@@ -18,13 +18,15 @@ public class InstantiateBubble : MonoBehaviour
         newbubble.transform.SetParent (GameObject.FindGameObjectWithTag("Canvas").transform, false);
 
 
-    }
+         }
 
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating ("BubbleSpawn", 0.0f, 0.5f);
+        GameObject newTowerPrefab = Instantiate(towerPrefab, new Vector2(0,-350), Quaternion.identity) as GameObject;
+        newTowerPrefab.transform.SetParent (GameObject.FindGameObjectWithTag("Canvas").transform, false);
     }   
 
     // Update is called once per frame
@@ -32,7 +34,10 @@ public class InstantiateBubble : MonoBehaviour
     {
 
 
+
+
     }
-    }
+
+}
 
 
