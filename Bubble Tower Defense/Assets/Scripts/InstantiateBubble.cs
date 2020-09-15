@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class InstantiateBubble : MonoBehaviour
 {
 
     public GameObject bubblePrefab;
-
+    private Ray ray; // The ray
+    private RaycastHit hit; // What we hit
 
     void BubbleSpawn(){
         
@@ -28,7 +30,9 @@ public class InstantiateBubble : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
 
     }
-}
+    }
+
+
