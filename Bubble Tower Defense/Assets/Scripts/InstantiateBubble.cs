@@ -6,6 +6,8 @@ using UnityEngine;
 public class InstantiateBubble : MonoBehaviour
 {
 
+
+    protected static float Hspeed = 200f;
     public GameObject bubblePrefab;
     public GameObject towerPrefab;
 
@@ -20,12 +22,18 @@ public class InstantiateBubble : MonoBehaviour
 
          }
 
+    void SpeedUp(){
+        Hspeed += 100f;
+        Debug.Log("Hspeed este acum: " + Hspeed);
+    }
+
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating ("BubbleSpawn", 0.0f, 0.5f);
-        GameObject newTowerPrefab = Instantiate(towerPrefab, new Vector2(0,-350), Quaternion.identity) as GameObject;
+        InvokeRepeating ("BubbleSpawn", 0.0f, 0.6f);
+        InvokeRepeating ("SpeedUp", 5f, 5f);
+        GameObject newTowerPrefab = Instantiate(towerPrefab, new Vector2(0,-450), Quaternion.identity) as GameObject;
         newTowerPrefab.transform.SetParent (GameObject.FindGameObjectWithTag("Canvas").transform, false);
     }   
 

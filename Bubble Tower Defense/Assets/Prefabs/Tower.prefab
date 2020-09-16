@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4672802125758368267}
   - component: {fileID: 3144331877598271339}
   - component: {fileID: -6743803642061536645}
+  - component: {fileID: 7268598467536221359}
   m_Layer: 5
   m_Name: Tower
   m_TagString: Untagged
@@ -37,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -144.98}
-  m_SizeDelta: {x: 282.6117, y: 289.9536}
+  m_SizeDelta: {x: 316.2, y: 282.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4672802125758368268
 CanvasRenderer:
@@ -60,14 +61,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.40868402, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 495ab9f6662cf8d4abf0b009aba5979a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -115,3 +116,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0a11ca2a8150fc479b8839b6e55e317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &7268598467536221359
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672802125758368265}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b3d154dd6e0866d44ae64556e3f4d10e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
