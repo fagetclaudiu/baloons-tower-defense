@@ -134,9 +134,10 @@ GameObject:
   - component: {fileID: 321719917}
   - component: {fileID: 321719919}
   - component: {fileID: 321719918}
+  - component: {fileID: 321719920}
   m_Layer: 5
   m_Name: Score
-  m_TagString: Untagged
+  m_TagString: Score
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,6 +203,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321719916}
   m_CullTransparentMesh: 0
+--- !u!114 &321719920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321719916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c304c745633ba44abfdc215b4f9d290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FinalScore: 0
+  FinalScoreText: {fileID: 321719918}
 --- !u!1 &760233887
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +302,6 @@ GameObject:
   m_Component:
   - component: {fileID: 809794574}
   - component: {fileID: 809794575}
-  - component: {fileID: 809794576}
   m_Layer: 0
   m_Name: Game Start
   m_TagString: Untagged
@@ -323,19 +337,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubblePrefab: {fileID: 4064292384350421066, guid: 0f067318b2de0474eb5724141a620cd8, type: 3}
   towerPrefab: {fileID: 4672802125758368265, guid: 4a48ea55173a7b04db86c09a9bad8828, type: 3}
---- !u!114 &809794576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809794573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa3e77fe9b6d94644bdea62e53e56b19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreTxt: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

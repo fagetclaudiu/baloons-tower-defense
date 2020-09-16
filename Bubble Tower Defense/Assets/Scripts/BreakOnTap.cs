@@ -6,20 +6,28 @@ using UnityEngine.UI;
 
 public class BreakOnTap : MonoBehaviour
 {
-    
-    private int scoreInt = 0;
+
+
+
     public Text scoreTxt;
+    static int scoreInt = 0;
+
+
     
 
     public void Destroy(){
         Destroy(this.gameObject);
+      //  FinalScore.GetComponent<Score>().SetTheScore(scoreInt);
         
         scoreInt++;
         scoreTxt.text = "Score: " + scoreInt;
+        
     }
 
     void Start() {
-        scoreTxt = gameObject.GetComponent<Text>();
+      //  FinalScore = GameObject.FindWithTag("Score");
+
+        scoreTxt = GameObject.Find( "Score" ).GetComponentInChildren<Text>();
     }
 
     // Update is called once per frame

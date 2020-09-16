@@ -31,6 +31,7 @@ public class InstantiateBubble : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Hspeed = 200f;
         InvokeRepeating ("BubbleSpawn", 0.0f, 0.6f);
         InvokeRepeating ("SpeedUp", 5f, 5f);
         GameObject newTowerPrefab = Instantiate(towerPrefab, new Vector2(0,-450), Quaternion.identity) as GameObject;

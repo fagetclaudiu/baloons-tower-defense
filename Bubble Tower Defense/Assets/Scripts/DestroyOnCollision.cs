@@ -10,6 +10,7 @@ public class DestroyOnCollision : MonoBehaviour
 
     void RoundLost(){
         Debug.Log("PIERDUT");
+        
     }
 
 
@@ -23,9 +24,10 @@ public class DestroyOnCollision : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D col) {
+    void OnCollisionEnter2D(Collision2D col) {
         Destroy(this.gameObject);
         SceneManager.LoadScene("RestartMenu");
+
 
     }
 
